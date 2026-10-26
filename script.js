@@ -7,6 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     const hash = link.getAttribute("href");
 
     if (!hash || hash === "#") {
+      event.preventDefault();
       return;
     }
 

@@ -513,6 +513,41 @@ section[id] {
   width: 100%;
 }
 
+/* Floating contact button */
+
+.floating-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 32px;
+  border-radius: var(--radius-sm);
+  background: var(--blue-dark);
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--blue-dark) 32%, transparent);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.floating-btn:hover {
+  background: color-mix(in srgb, var(--blue-dark) 88%, #000000);
+  box-shadow: 0 16px 34px color-mix(in srgb, var(--blue-dark) 40%, transparent);
+  transform: translateY(-2px);
+}
+
+.floating-btn:active {
+  transform: translateY(0);
+}
+
 /* ==========================================================================
    Formats
    ========================================================================== */
